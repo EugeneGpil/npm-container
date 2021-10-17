@@ -7,4 +7,5 @@ RUN apt-get update && \
     export NVM_DIR="$HOME/.nvm" && \
     . $NVM_DIR/nvm.sh && \
     nvm install ${NODE_VERSION} && \
-    curl -fsSL https://code-server.dev/install.sh | sh
+    curl -fsSL https://code-server.dev/install.sh | sh && \
+    apt-get install git -y
